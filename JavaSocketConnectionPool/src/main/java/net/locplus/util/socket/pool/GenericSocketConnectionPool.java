@@ -1,8 +1,8 @@
 package net.locplus.util.socket.pool;
 
-import com.nc.loc.LocStar2;
-import java.util.Vector;
 import org.apache.log4j.Logger;
+
+import java.util.Vector;
 
 /**
  * Created with IntelliJ IDEA.

@@ -1,8 +1,8 @@
 package net.locplus.util.socket.pool;
 
-import com.nc.loc.LocStar2;
-import java.util.Properties;
 import org.apache.log4j.Logger;
+
+import java.util.Properties;
 
 /**
  * Created with IntelliJ IDEA. User: hadoop Date: 13-10-18 Time: 下午4:35

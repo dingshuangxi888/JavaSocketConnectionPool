@@ -1,18 +1,18 @@
 package net.locplus.util.socket.pool;
 
-import com.nc.loc.LocStar2;
+import org.apache.log4j.Logger;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
-import org.apache.log4j.Logger;
 
 /**
  * Created with IntelliJ IDEA. User: hadoop Date: 13-10-18 Time: 下午5:05
  */
 public class SocketConnectionManager {
-    
-    static final Logger logger = Logger.getLogger(LocStar2.class.getName());
+
+    static final Logger logger = Logger.getLogger(SocketConnectionManager.class.getName());
 
     private SocketConnectionManager() {
         if (socketConnectionPool == null) {
@@ -29,6 +29,7 @@ public class SocketConnectionManager {
             }
         }
     }
+
     private SocketConnectionPool socketConnectionPool;
 
     public static SocketConnectionManager getInstance() {

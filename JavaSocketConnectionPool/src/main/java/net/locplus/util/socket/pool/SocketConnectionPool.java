@@ -1,4 +1,5 @@
 package net.locplus.util.socket.pool;
+
 /**
  * Created with IntelliJ IDEA.
  * User: hadoop
