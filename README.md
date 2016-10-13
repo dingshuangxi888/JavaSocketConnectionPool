@@ -7,17 +7,21 @@ JavaSocketConnectionPool
 
 3.Using java socket connection pool project is so simple, just write codes as follows:
 
+```java
   SocketConnectionPool connectionPool = SocketConnectionManager.getInstance().getSocketConnectionPool();
   SocketConnection connection = connectionPool.getConnection();
   String msg = "Hello World!";
   connection.sendData(msg);
   String receiveData = connection.receiveData();
   System.out.println(receiveData);
+```
 
 4.To close the socket connection pool, you can invoke as follows:
 
+```java
   SocketConnectionManager.getInstance().getSocketConnectionPool().destory();
+```
   
-5.Invoke connection.close() just put the connection back to pool, not really to close the socket connection
+5.Invoke `connection.close()` just put the connection back to pool, not really to close the socket connection
 
-6.If you want to really close the socket connection you can invoke connection.destory() to do it.
+6.If you want to really close the socket connection you can invoke `connection.destory()` to do it.
